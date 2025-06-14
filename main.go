@@ -17,7 +17,7 @@ func main() {
 	cfg := config.Load()
 
 	if cfg.DstURL == "" {
-		log.Fatal("укажите DST_URL в .env/ENV или флаг --dst")
+		log.Fatal("no DST_URL or flag --dst")
 	}
 
 	logger := log.New(os.Stdout, "", log.LstdFlags)
